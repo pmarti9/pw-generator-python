@@ -33,13 +33,13 @@ def write_password():
 
     final_criteria = selected_criteria[0] + selected_criteria[1] + selected_criteria[2] + selected_criteria[3]
 
-    print(final_criteria)
     password = ""
-    for i in range(int(characters)):
-        password += selected_criteria[math.floor(random.randint(characters, characters)  * len(final_criteria))]
+    for i in range(characters):
+        password += final_criteria[math.floor(random.random() * len(final_criteria))]
 
     return password
 
 
 if __name__ == "__main__":
-    write_password()
+    password = write_password()
+    print(password)
