@@ -7,8 +7,13 @@
 </p>
 ## Usage
 
+> Requirements file is empty, so there are no dependencies, will add some for potential database functionality later. run the command below. it will prompt you how many characters and what characters you want to have. as of now, all characters are required. just type y for all of the questions on what characters you want.
+> 
+> Run pythong
 
-from the command line , run python3 main.py. it will prompt you how many characters and what characters you want to have. you should need all of them
+```shell
+python3 main.py
+```
 
 
 ## Author
