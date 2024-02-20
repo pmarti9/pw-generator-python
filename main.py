@@ -12,13 +12,6 @@ def write_password():
     uppercase = ["abcdefghijklmnopqrstuvwxyz".upper()]
     numbers = ["1234567890"]
     special = ["!@#$%^&*()?<>,./"]
-    # has_lowercase = bool(input("want to include lowercase?"))
-    # has_uppercase = bool(input("want to include uppercase?"))
-    # has_numbers = bool(input("want to include numbers?"))
-    # has_special_chars = bool(input("want to include special characters?"))
-    # if not has_special_chars and not has_lowercase and not has_uppercase and not has_numbers:
-    #     print("make sure that you select criteria for a password, try again")
-    #     sys.exit(1)
 
     selected_criteria = [*lowercase, *uppercase, *special, *numbers]
 
@@ -32,5 +25,6 @@ def write_password():
 
 
 if __name__ == "__main__":
+    print("hello....")
     password = write_password()
     print(password)
