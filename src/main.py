@@ -1,6 +1,6 @@
 import logging
 
-from password.password import Password
+from password import password
 
 if __name__ == "__main__":
     logging.basicConfig(level=logging.INFO)
@@ -10,6 +10,6 @@ if __name__ == "__main__":
     log.info("Hello, and welcome to the password generator!\n")
     log.info("Please enter your name below to get started\n")
     name = input("Name: ")
-    p = Password(name)
+    p = password.Password(name)
     password = p.write_password()
     print(password)
