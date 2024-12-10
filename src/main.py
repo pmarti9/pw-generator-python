@@ -12,4 +12,5 @@ if __name__ == "__main__":
     name = input("Name: ")
     p = password.Password(name)
     password = p.write_password()
+    p.save_password_to_redis_store(password)
     print(password)
