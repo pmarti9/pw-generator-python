@@ -14,11 +14,11 @@
 > Run the below command to execute the script.
 
 ```shell
-python3 main.py
+python3 src/main.py
 ```
 or if you are on windows
 ```shell
-python main.py
+python src/main.py
 ```
 
 
