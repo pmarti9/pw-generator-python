@@ -2,7 +2,7 @@ import logging
 import math
 import random
 
-from src.datastore.redis_config import RedisConfig
+from datastore.redis_config import RedisConfig
 
 logging.basicConfig(level=logging.INFO)
 log = logging.getLogger('password')
@@ -42,6 +42,6 @@ class Password:
                 continue
 
     def save_password_to_redis_store(self, password):
-        redis_config = RedisConfig(host='localhost', port=6379, db=0)
-        redis_connection = redis_config.get_redis_connection()
+        r = RedisConfig(host='localhost', port=6379, db=0)
+        redis_connection = r.get_redis_connection()
         redis_connection.set(self.name, password)
